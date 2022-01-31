@@ -22,8 +22,6 @@ public class Main {
         four.setMaterial("Glass");
         five.setMaterial("Carton");
 
-        one.setHeight(0);
-
         System.out.println("vol of " + one.getName() + ":  " + one.volume()
                         + "\nvol of " + two.getName() + ": " + two.volume()
                         + "\nvol of " + three.getName() + ":  " + three.volume()

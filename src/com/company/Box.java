@@ -6,8 +6,8 @@ public class Box {
     private int height;
     private int width;
     private int depth;
-    private String name;
-    private String material;
+    protected String name;
+    protected Material material;
 
     Scanner scanner = new Scanner(System.in);
 
@@ -17,9 +17,14 @@ public class Box {
         this.depth = depth;
     }
 
-    public Box(int height, int width, int depth, String name, String material) {
+    public Box(int height, int width, int depth, String name, Material material) {
         this(height, width, depth);
         this.name = name;
+        this.material = material;
+    }
+
+    public Box(int height, int width, int depth, Material material) {
+        this(height, width, depth);
         this.material = material;
     }
 
@@ -39,7 +44,7 @@ public class Box {
         return name;
     }
 
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
@@ -62,7 +67,7 @@ public class Box {
         this.name = name;
     }
 
-    public void setMaterial(String material) {
+    public void setMaterial(Material material) {
         this.material = material;
     }
 

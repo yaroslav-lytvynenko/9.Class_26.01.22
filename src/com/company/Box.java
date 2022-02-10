@@ -29,7 +29,7 @@ public class Box {
                 this.width = width;
                 this.depth = depth;
                 if (this.height <= 0 || this.width <= 0 || this.depth <= 0) {
-                    System.out.println("\nIncorrect input parameter(s)");
+                    throw new IllegalArgumentException("Incorrect input parameter(s)");
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());

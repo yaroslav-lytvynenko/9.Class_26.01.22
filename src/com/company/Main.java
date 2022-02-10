@@ -65,5 +65,6 @@ public class Main {
         warehouse.addBox(boxThree);
 
         System.out.println(warehouse.toString());
+
     }
 }

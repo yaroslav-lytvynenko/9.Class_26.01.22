@@ -11,17 +11,6 @@ public class Box {
     protected Material material;
     Scanner scanner = new Scanner(System.in);
 
-   /* public Box(int height, int width, int depth) {
-        if (this.height <= 0 || this.width <= 0 || this.depth <= 0) {
-            throw new IllegalArgumentException("Incorrect input parameter(s)");
-        }
-        this.height = height;
-        this.width = width;
-        this.depth = depth;
-    }*/
-
-    public Box(){}
-
     public Box(int height, int width, int depth) {
         if (this.height <= 0 || this.width <= 0 || this.depth <= 0) {
             try {

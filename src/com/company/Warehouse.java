@@ -41,9 +41,12 @@ public class Warehouse {
     public String toString(){
         String str = "";
         System.out.println("\n" + getName() + " contents:");
-        for(int i = 0; i < warehouseBoxes.length; i++){
-           str += warehouseBoxes[i].toString() + "\n";
+        for(Box element : warehouseBoxes){
+            str += element.toString() + "\n";
         }
+//        for(int i = 0; i < warehouseBoxes.length; i++){
+//           str += warehouseBoxes[i].toString() + "\n";
+//        }
         return str;
     }
 }

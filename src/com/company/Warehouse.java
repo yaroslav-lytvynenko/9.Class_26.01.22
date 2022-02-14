@@ -39,11 +39,11 @@ public class Warehouse {
 
     @Override
     public String toString(){
+        String str = "";
         System.out.println("\n" + getName() + " contents:");
         for(int i = 0; i < warehouseBoxes.length; i++){
-            String a = warehouseBoxes[i].toString();
-            System.out.println(a);
+           str += warehouseBoxes[i].toString() + "\n";
         }
-        return "";
+        return str;
     }
 }
